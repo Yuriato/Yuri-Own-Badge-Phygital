@@ -124,10 +124,62 @@ body::before { content:""; position:fixed; inset:0; z-index:-2; pointer-events:n
    AJUSTEMENT DE LA DEUXIÈME PAGE UNIQUEMENT
    ============================================================ */
 
-#profile-page {
-  zoom: 0.85;
-}
+#profile-page,
 #music-page {
-  zoom: 0.85;
+  zoom: 1;
 }
 
+/* ============================================================
+   ADAPTATION AUX ÉCRANS PEU HAUTS
+   ============================================================ */
+
+@media (min-width: 601px) and (max-height: 800px) {
+
+  .page {
+    padding-top: 16px;
+    padding-bottom: 12px;
+  }
+
+  .flower-orbit {
+    width: min(48vh, 420px, 60vw);
+    margin: 6px auto;
+  }
+
+  .player {
+    padding: 10px 18px;
+    margin-bottom: 6px;
+  }
+
+  #waveform {
+    height: 42px;
+  }
+
+  .player-foot {
+    padding-top: 8px;
+    margin-top: 8px;
+  }
+
+  .scroll-cue {
+    padding: 5px;
+    gap: 4px;
+  }
+
+  .profile-content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .portrait-wrap {
+    width: 88px;
+    height: 88px;
+    margin-bottom: 16px;
+  }
+
+  .profile-divider {
+    margin: 20px 0;
+  }
+
+  .endnote {
+    margin-top: 20px;
+  }
+}
