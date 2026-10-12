@@ -1010,11 +1010,3 @@ window.addEventListener("resize", resizeSpaceCanvas);
 
 })();
 
-
-/* ============================================================
-   DÉSACTIVER LE SCROLL À LA MOLETTE
-   ============================================================ */
-
-window.addEventListener("wheel", (event) => {
-  event.preventDefault();
-}, { passive: false });
